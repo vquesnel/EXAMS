@@ -12,7 +12,7 @@ void	ft_swap(int *a, int *b)
 
 void	sort_int_tab(int *tab, unsigned int size)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (i < size - 1)

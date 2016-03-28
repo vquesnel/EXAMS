@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/21 21:10:24 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/21 21:26:18 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 22:17:38 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,10 +75,4 @@ char	*ft_itoa(int nbr)
 	}
 	ptr[i] = '\0';
 	return (ptr);
-}
-
-int main()
-{
-	printf("%s\n", ft_itoa(2147483647));
-	return (0);
 }
