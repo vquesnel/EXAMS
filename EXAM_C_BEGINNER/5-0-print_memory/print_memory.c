@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/28 21:50:39 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 22:01:05 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/04/18 15:55:59 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	ft_putchar(char c)
 
 static void		print_hex(unsigned char hex)
 {
-	char *tmp = "0123456789abcdef"
+	char *tab = "0123456789abcdef";
 
-	ft_putchar(tab[hex / 16]);
+		ft_putchar(tab[hex / 16]);
 	ft_putchar(tab[hex % 16]);
 }
 
@@ -53,13 +53,14 @@ static void		make_hexs(unsigned char *line, size_t curline, size_t size)
 	}
 }
 
-void		print_memory(unsigned void *addr, size_t size)
+void		print_memory(const void *addr, size_t size)
 {
 	size_t			curline;
 	unsigned char	*tmp;
 	size_t			i;
 
 	curline = 0;
+	i = 0;
 	tmp = (unsigned char *)addr;
 	while (curline * i < size)
 	{
@@ -72,8 +73,17 @@ void		print_memory(unsigned void *addr, size_t size)
 				print_char(tmp[i]);
 			i++;
 		}
-		ft_putchar("\n");
+		ft_putchar('\n');
 		tmp += 16;
 		curline++;
 	}
+}
+
+int	main(void)
+{
+	int	tab[10] = {0, 23, 150, 255,
+		12, 16,  21, 42};
+
+	print_memory(tab, sizeof(tab));
+	return (0);
 }
