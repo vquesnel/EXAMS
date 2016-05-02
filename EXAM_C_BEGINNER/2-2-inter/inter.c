@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 19:52:23 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 20:03:16 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:13:14 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		is_first(char *str, char c, int pos)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -23,14 +23,14 @@ int		is_first(char *str, char c, int pos)
 			break ;
 		i++;
 	}
-	if ( i == pos)
+	if (i == pos)
 		return (1);
 	return (0);
 }
 
 int		is_instring(char *str, char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -55,7 +55,7 @@ void	inter(char *s1, char *s2)
 	}
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac == 3)
 		inter(av[1], av[2]);

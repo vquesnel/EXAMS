@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 17:21:47 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 17:27:30 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:10:13 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -31,8 +31,8 @@ void	ft_putstr(char *str)
 
 int		wdmatch(char *s1, char *s2)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -47,11 +47,13 @@ int		wdmatch(char *s1, char *s2)
 	return (0);
 }
 
-int main(int ac, char ** av)
+int		main(int ac, char **av)
 {
 	if (ac == 3)
-		if(wdmatch(av[1], av[2]))
+	{
+		if (wdmatch(av[1], av[2]))
 			ft_putstr(av[1]);
+	}
 	ft_putchar('\n');
 	return (0);
 }

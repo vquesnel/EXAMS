@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/21 21:10:24 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 22:17:38 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:24:44 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,15 @@ long	max_power(long nb)
 
 char	*ft_itoa(int nbr)
 {
-	long nb;
-	int div;
-	long pwr;
-	char *ptr;
-	int	i;
+	long	nb;
+	long	pwr;
+	char	*ptr;
+	int		i;
 
 	i = 0;
 	nb = (long)nbr;
 	ptr = (char *)malloc(sizeof(char) * int_len(nbr) + 1);
-		if (nb < 0)
+	if (nb < 0)
 	{
 		nb = -nb;
 		ptr[i] = '-';
@@ -67,8 +66,7 @@ char	*ft_itoa(int nbr)
 	pwr = max_power(nb);
 	while (pwr > 0)
 	{
-		div = nb / pwr;
-		ptr[i] = div + 48;
+		ptr[i] = nb/ pwr + 48;
 		nb %= pwr;
 		pwr /= 10;
 		++i;

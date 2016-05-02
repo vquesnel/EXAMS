@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/09 11:14:33 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/09 18:02:35 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:21:28 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,9 @@ void	print_hex(int nb)
 	int		pwr;
 	int		index;
 	int		rest;
-	char	hex[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+	char	hex[16];
 
+	hex = "012346789ABCDEF";
 	pwr = power(nb);
 	while (pwr > 0)
 	{
@@ -77,5 +78,5 @@ int		main(int ac, char **av)
 		print_hex(n);
 	}
 	write(1, "\n", 1);
-	return(0);
+	return (0);
 }

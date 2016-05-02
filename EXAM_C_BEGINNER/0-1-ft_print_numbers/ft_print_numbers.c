@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 14:46:41 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 14:48:07 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:03:38 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_print_numbers(void)
 	}
 }
 
-int main()
+int		main(void)
 {
 	ft_print_numbers();
 	return (0);

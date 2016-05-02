@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/09 15:23:52 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/09 15:32:37 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:18:09 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_list_size(t_list *begin_list)
 {
-	int	i;
+	int		i;
 	t_list	*list;
 
 	i = 0;

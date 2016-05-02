@@ -6,13 +6,13 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 14:51:04 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 14:53:48 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:03:14 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	main()
+int	main(void)
 {
 	write(1, "zYxWvUtSrQpOnMlKjIhGfEdCbA", 26);
 	write(1, "\n", 1);

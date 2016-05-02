@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 17:34:00 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 17:46:50 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:12:19 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ void	ft_putnbr(int nb)
 		ft_putchar('0' + nb);
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
-	int res;
+	int	res;
 
 	res = 0;
 	if (ac != 4)

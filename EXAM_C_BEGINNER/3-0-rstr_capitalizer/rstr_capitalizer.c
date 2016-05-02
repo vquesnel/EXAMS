@@ -6,13 +6,13 @@
 /*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/21 11:05:56 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/21 21:01:33 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:16:49 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rstr_capitalizer(char	*str)
+void	rstr_capitalizer(char *str)
 {
 	int i;
 
@@ -20,13 +20,16 @@ void	rstr_capitalizer(char	*str)
 	while (str[i])
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] +=32;
+			str[i] += 32;
 		++i;
 	}
 	i = 0;
 	while (str[i])
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') && (str[i + 1] == ' ' || str[i] == '\t' || !str[i + 1] || str[i + 1] == '\n' || str[i + 1] == '\v' || str[i + 1] == '\r' || str[i + 1] == '\f'))
+		if ((str[i] >= 'a' && str[i] <= 'z') && (str[i + 1] == ' ' ||\
+					str[i] == '\t' || !str[i + 1] || str[i + 1] == '\n' || \
+					str[i + 1] == '\v' || str[i + 1] == '\r'\
+					|| str[i + 1] == '\f'))
 		{
 			str[i] -= 32;
 			write(1, &str[i], 1);
@@ -37,7 +40,7 @@ void	rstr_capitalizer(char	*str)
 	}
 }
 
-int	main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	int i;
 
@@ -56,4 +59,3 @@ int	main(int ac, char **av)
 		write(1, "\n", 1);
 	return (0);
 }
-

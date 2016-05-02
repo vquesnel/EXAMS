@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 15:13:06 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 15:36:43 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:04:25 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ void	rotone(char *str)
 	}
 }
 
-
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	int i;
 

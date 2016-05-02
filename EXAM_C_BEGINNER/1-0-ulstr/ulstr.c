@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 15:44:24 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 15:49:57 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:05:30 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ulstr(char *str)
 	}
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac == 2)
 		ulstr(av[1]);

@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 16:10:55 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 16:18:01 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:06:47 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrev(char *str)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	char	c;
 
 	len = 0;
@@ -24,16 +24,16 @@ char	*ft_strrev(char *str)
 	i = 0;
 	len--;
 	while (i <= len / 2)
-		{
-			c = str[i];
-			str[i] = str[len - i];
-			str[len - i] = c;
-			i++;
-		}
+	{
+		c = str[i];
+		str[i] = str[len - i];
+		str[len - i] = c;
+		i++;
+	}
 	return (str);
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac == 2)
 		printf("%s\n", ft_strrev(av[1]));

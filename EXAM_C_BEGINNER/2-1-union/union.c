@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 17:51:25 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 19:45:43 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:11:25 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	ft_union(char *s1, char *s2)
 	}
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac != 3)
 		return (0);

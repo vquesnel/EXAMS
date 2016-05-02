@@ -6,7 +6,7 @@
 /*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/21 10:42:17 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/21 10:48:09 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:04:02 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	search(char *str, char c, char new)
 	}
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac == 4)
 		search(av[1], av[2][0], av[3][0]);

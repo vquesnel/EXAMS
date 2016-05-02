@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 14:31:25 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 14:39:01 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:02:27 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putstr(char *str)
 	}
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	int i;
 

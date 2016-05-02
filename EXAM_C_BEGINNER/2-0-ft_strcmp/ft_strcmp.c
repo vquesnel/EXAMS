@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 15:56:27 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/08 16:09:34 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:06:08 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,10 @@ int		ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac != 3)
 		return (0);
-	printf("%d\n",ft_strcmp(av[1], av[2]));
+	printf("%d\n", ft_strcmp(av[1], av[2]));
 	return (0);
 }
-

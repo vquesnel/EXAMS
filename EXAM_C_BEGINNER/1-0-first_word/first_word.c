@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 14:55:23 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/09 17:39:33 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/02 15:07:25 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ void	first_word(char *str)
 	while (str[i])
 	{
 		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\r' ||
-				str[i] =='\v' || str[i] == '\n' || str[i] == '\f')
+				str[i] == '\v' || str[i] == '\n' || str[i] == '\f')
 			++i;
 		else
 		{
 			write(1, &str[i], 1);
 			if (str[i + 1] == ' ' || str[i + 1] == '\t' || str[i + 1] == '\r'
-					|| str[i + 1] =='\v' || str[i + 1] == '\n' ||
+					|| str[i + 1] == '\v' || str[i + 1] == '\n' ||
 					str[i + 1] == '\f' || str[i + 1] == '\0')
 				break ;
 			++i;
@@ -34,7 +34,7 @@ void	first_word(char *str)
 	}
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	if (ac != 2)
 	{
