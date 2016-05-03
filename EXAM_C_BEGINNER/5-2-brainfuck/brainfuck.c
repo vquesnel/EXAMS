@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/11 16:45:05 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/11 17:48:51 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/05/03 12:48:53 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,38 +49,32 @@ void	brainfuck(char *str)
 			(*ptr)--;
 		else if (str[i] == '.')
 			write(1, ptr, 1);
-		else if (str[i] == '[')
+		else if (str[i] == '[' && !(*ptr))
 		{
-			if (*ptr == 0)
+			loop = 0;
+			while (str[i])
 			{
-				loop = 0;
-				while (str[i])
-				{
-					if (str[i] == '[')
-						++loop;
-					if (str[i] == ']')
-						--loop;
-					if (loop == 0)
-						break ;
-					++i;
-				}
+				if (str[i] == '[')
+					++loop;
+				if (str[i] == ']')
+					--loop;
+				if (loop == 0)
+					break ;
+				++i;
 			}
 		}
-		else if (str[i] == ']')
+		else if (str[i] == ']' && (*ptr))
 		{
-			if (*ptr != 0)
+			loop = 0;
+			while (str[i])
 			{
-				loop = 0;
-				while (str[i])
-				{
-						if (str[i] == ']')
-						++loop;
-					if (str[i] == '[')
-						--loop;
-					if (loop == 0)
-						break ;
-					--i;
-				}
+				if (str[i] == ']')
+					++loop;
+				if (str[i] == '[')
+					--loop;
+				if (loop == 0)
+					break ;
+				--i;
 			}
 		}
 		++i;
